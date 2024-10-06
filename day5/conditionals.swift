@@ -48,3 +48,17 @@ if transport == .airplane || transport == .helicopter {
 } else {
     print("Scooter goes brrrr!!!!!!")
 }
+
+// Ternary operator, short hand if 
+let names = ["John", "Cube", "Sony"]
+let crewCount = names.isEmpty ? "No one" : "\(names.count) people"
+print(crewCount)
+
+enum Theme {
+    case light, dark
+}
+
+let theme = Theme.dark
+
+let background = theme == .dark ? "black" : "white"
+print(background)
